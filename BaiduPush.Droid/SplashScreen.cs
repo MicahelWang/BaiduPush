@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content.PM;
+using Com.Baidu.Android.Pushservice;
 using MvvmCross.Droid.Views;
 
 namespace BaiduPush.Droid
@@ -16,6 +17,7 @@ namespace BaiduPush.Droid
         public SplashScreen()
             : base(Resource.Layout.SplashScreen)
         {
+            PushManager.StartWork(this.ApplicationContext,PushConstants.LoginTypeApiKey, "c93U79MscdMTli9RSxBn4pI2 ");
         }
     }
 }
